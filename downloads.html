@@ -13,26 +13,27 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="assets/js/hello.min.js"></script>
 		<script src="assets/js/gate.js"></script>
+		<script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	</head>
 	<body class="loading">
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
 			<div id="main">
-
 				<!-- Main -->
 					<header id="header">
 						<h1>downloads</h1>
 						<p style="opacity: 1.0;"><iframe width="60%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/218822987&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></p>
 						<p style="opacity: 1.0;">
-						  <div id="soundcloud button" onclick="hello('soundcloud').login()">
+						  <span id="soundcloud button" onclick="hello('soundcloud').login()">
 						    <img width="10%" height="10%" src="assets/buttons/scbutton.png" />
-						  </div>
-						  <div id="download button">
+						  </span>&nbsp;
+						  <span id="download button">
 						    <img width="10%" height="10%" src="assets/buttons/followbutton.png" />
-						  </div>
+						  </span>
 						</p>
 					</header>
 

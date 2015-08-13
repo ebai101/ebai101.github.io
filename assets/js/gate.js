@@ -1,17 +1,13 @@
-var SOUNDCLOUD_ID = "b1a472f28c62eed639c2bbfe17090675"
+SC.initialize({
+    client_id: = "068d7b70ba3ff663fc2f252c8533d291"
+    redirect_uri: = "/redirect.html"
+});
 
-hello.on("auth.login", function(auth) {
-    if (auth.network == "soundcloud") {
-        hello("soundcloud")
-            .api("soundcloud:/me/followings/234452061", "get", {
-                client_id: SOUNDCLOUD_ID
-            })
+SC.connect(function(){
+    SC.get('/me/followings/23445206')
             .then(function(r) {
                 if (r.errors != undefined) {
-                    hello("soundcloud")
-                        .api("soundcloud:/me/followings/23445206.json", "put", {
-                            client_id: SOUNDCLOUD_ID
-                        });
+                        SC.put('/me/followings/23445206');
                 }
             });
     }
