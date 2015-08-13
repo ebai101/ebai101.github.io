@@ -1,0 +1,16 @@
+hello.on("auth.login", function(auth) {
+    if (auth.network == "soundcloud") {
+        hello("soundcloud")
+            .api("soundcloud:/me/followings/98894541", "get", {
+                client_id: SOUNDCLOUD_ID
+            })
+            .then(function(r) {
+                if (r.errors != undefined) {
+                    hello("soundcloud")
+                        .api("soundcloud:/me/followings/98894541.json", "put", {
+                            client_id: SOUNDCLOUD_ID
+                        });
+                }
+            });
+    }
+});
