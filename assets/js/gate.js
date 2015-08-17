@@ -17,7 +17,7 @@ function locker() {
 	   src: "assets/buttons/scdonebutton.png" 
 	});
 	$("a.soundcloud").attr({
-	    href: "#"
+	    href: "https://www.dropbox.com/s/kfc48vwgfm4jjpj/Longtime.mp3?dl=0"
 	});
     }
 }
