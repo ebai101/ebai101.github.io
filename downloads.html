@@ -8,38 +8,48 @@
 	<head>
 		<title>downloads</title>
 		<meta charset="utf-8" />
+		<meta property="og:image" content="assets/artwork/longtime.jpg">
+		<meta property="og:image:type" content="image/jpg">
+		<meta property="og:image:width" content="500">
+		<meta property="og:image:height" content="500">
+		<meta property="og:title" content="Andreas - Longtime">
+		<meta property="og:site_name" content="Andreas">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="assets/js/hello.min.js"></script>
-		<script src="assets/js/gate.js"></script>
-		<script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
+		<link rel="stylesheet" href="assets/css/altmain.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link href="favicon.ico?v=2" rel="shortcut icon" type="image/x-icon" />
+		<script src="assets/js/hello.min.js"></script>
+		<script src="assets/js/gate.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://connect.soundcloud.com/sdk-2.0.0.js"></script>
 	</head>
 	<body class="loading">
-		<div id="wrapper">
+		<div id="altwrapper">
 			<div id="bg"></div>
-			<div id="overlay"></div>
 			<div id="main">
-				<!-- Main -->
+				<!-- Header -->
 					<header id="header">
 						<h1>downloads</h1>
-						<p style="opacity: 1.0;"><iframe width="60%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/218822987&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></p>
-						<p style="opacity: 1.0;">
-						  <span id="soundcloud button" onclick="hello('soundcloud').login()">
-						    <img width="10%" height="10%" src="assets/buttons/scbutton.png" />
+						<p><iframe width="60%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/218822987&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></p>
+						<p>
+						  <span>
+						    <a class="soundcloud" href="javascript:hello('soundcloud').login();">
+						      <img class="soundcloud" width="10%" height="10%" src="assets/buttons/scbutton.png" />
+						    </a>
 						  </span>&nbsp;
-						  <span id="download button">
-						    <img width="10%" height="10%" src="assets/buttons/followbutton.png" />
+						  <span>
+						    <a class="download" href="#">
+						       <img class="download" width="10%" height="10%" src="assets/buttons/followbutton.png" />
+						    </a>
 						  </span>
 						</p>
 					</header>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright"><a href="http://html5up.net">html5up</a></span>
+						<span class="instructions">follow andreas on soundcloud to unlock the download</span>
 					</footer>
 
 			</div>
