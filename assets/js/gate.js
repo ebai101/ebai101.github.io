@@ -8,17 +8,17 @@ function locker() {
     if(g.soundcloud) {
 	//changes things
         $("img.download").attr({
-	    src: "assets/buttons/dlbutton.png"
+	    src: "assets/buttons/dlbutton_2.png"
 	});
         $("a.download").attr({
             href: DOWNLOAD_LINK
-        });
+        }).css("cursor","pointer");
 	$("img.soundcloud").attr({
-	   src: "assets/buttons/scdonebutton.png" 
+	   src: "assets/buttons/scbutton_2.png" 
 	});
 	$("a.soundcloud").attr({
 	    href: "#"
-	});
+	}).css("cursor","default");
     }
 }
 
