@@ -1,7 +1,7 @@
 window.gate = {};
 
 var SOUNDCLOUD_ID = "068d7b70ba3ff663fc2f252c8533d291";
-var DOWNLOAD_LINK = null;
+var DOWNLOAD_LINK = "https://dl.dropboxusercontent.com/u/3860578/song%20downloads/Longtime.mp3";
 
 function locker() {
     var g = window.gate;
@@ -17,7 +17,7 @@ function locker() {
 	   src: "assets/buttons/scdonebutton.png" 
 	});
 	$("a.soundcloud").attr({
-	    href: "https://www.dropbox.com/s/kfc48vwgfm4jjpj/Longtime.mp3?dl=0"
+	    href: "#"
 	});
     }
 }
