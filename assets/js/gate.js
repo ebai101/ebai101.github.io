@@ -1,7 +1,7 @@
 window.gate = {};
 
 var SOUNDCLOUD_ID = "068d7b70ba3ff663fc2f252c8533d291";
-var DOWNLOAD_LINK = "https://dl.dropboxusercontent.com/u/3860578/song%20downloads/Longtime.mp3";
+var DOWNLOAD_LINK = "https://github.com/ebai101/ebai101.github.io/releases/download/mp3/Longtime.mp3";
 
 function locker() {
     var g = window.gate;
