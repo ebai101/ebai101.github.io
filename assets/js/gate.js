@@ -9,7 +9,7 @@ function locker() {
 	    src: "../assets/buttons/dlbutton_2.png"
 	});
         $("a.download").attr({
-            href: DOWNLOAD_LINK
+            href: ddd
         }).css("cursor","pointer");
 	$("img.soundcloud").attr({
 	   src: "../assets/buttons/scbutton_2.png" 
