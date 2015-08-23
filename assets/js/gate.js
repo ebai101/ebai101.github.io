@@ -1,12 +1,10 @@
 window.gate = {};
 
 var SOUNDCLOUD_ID = "068d7b70ba3ff663fc2f252c8533d291";
-var DOWNLOAD_LINK = "https://github.com/ebai101/ebai101.github.io/releases/download/mp3/Longtime.mp3";
 
 function locker() {
     var g = window.gate;
     if(g.soundcloud) {
-	//changes things
         $("img.download").attr({
 	    src: "../assets/buttons/dlbutton_2.png"
 	});
@@ -25,21 +23,15 @@ function locker() {
 hello.on("auth.login", function(auth) {
     if(auth.network == "soundcloud") {
         console.log("Logging into soundcloud.");
-
-	//makes handshake
         hello("soundcloud")
         .api("soundcloud:/me/followings/23445206", "get", {client_id: SOUNDCLOUD_ID})
         .then(function(r) {
-            window.gate.soundcloud = true;
-	    
-	    //follows if not following
+            window.gate.soundcloud = true;	    
             if(r.errors != undefined) {
                 hello("soundcloud")
                 .api("soundcloud:/me/followings/23445206.json", "put",
                      {client_id: SOUNDCLOUD_ID});
             }
-
-	    //opens locker
             locker();
         });
     }
