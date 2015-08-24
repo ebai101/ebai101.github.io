@@ -1,4 +1,4 @@
-var insert_sql = "  INSERT INTO downloads VALUES (%[REMOTE_ADDR]||%(usrId), %(tstamp));"
+var insert_sql = "  INSERT INTO publicdownloads VALUES (%[REMOTE_ADDR]||%(usrId), %(tstamp));"
 
 $(document).ready(function () {
     $.rdbHostConfig({ 'userName' : 'p0000001604',
