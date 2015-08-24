@@ -15,7 +15,7 @@ function locker() {
 	   src: "../assets/buttons/scbutton_2.png" 
 	});
 	$("a.soundcloud").attr({
-	    href: "javascript:download();"
+	    href: ddd
 	}).css("cursor","default");
     }
 }
