@@ -1,7 +1,0 @@
-var insert_sql = "  INSERT INTO downloads SELECT"
-
-$(document).ready(function () {
-    
-    $.rdbHostConfig({ 'userName' : 'p0000001604'
-    
-})
