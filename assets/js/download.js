@@ -16,6 +16,6 @@ function download() {
 		   namedParams : { 'usrId' : usrId, "tstamp" : time },
 		   callback : exit,
 		   errback : function (err) {
-		       alert('sql error '+err[0]+err[1])
+		       console.log('sql error '+err[0]+err[1])
 		   }});
 }
